@@ -1,0 +1,68 @@
+% ================================================================================================
+\documentclass[10pt,notitlepage]{article}
+
+\usepackage[T1]{fontenc}
+\usepackage{amsmath}
+\usepackage{bm}
+\usepackage[urw-garamond]{mathdesign}
+
+% Links
+\usepackage[linktocpage]{hyperref}
+
+% To type in pt-br.
+\usepackage[brazilian]{babel}
+\usepackage[utf8]{inputenc}
+
+% Page layout
+\usepackage[usenames,dvipsnames]{color}
+\usepackage[margin=1.0in]{geometry}
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\fancyfoot{}
+\fancyhead{}
+\fancyhead[L]{Teoria de perturbação de buracos negros}
+\renewcommand{\headrulewidth}{0.5pt}
+\fancyfoot[C]{--~\thepage~--}
+
+% To generate random text.
+\usepackage{lipsum}
+
+% For french-style print use:
+% \usepackage[uppercase=upright, greeklowercase=upright, urw-garamond]{mathdesign}
+\usepackage{empheq}
+\newcommand\widecolourbox[1]{{\setlength\fboxrule{0.75pt}\setlength\fboxsep{4pt}\fcolorbox{Maroon}{white}{\enspace#1\enspace }}}
+
+% Some user-defined commands
+\newcommand{\dd}{{\rm d}}
+% ================================================================================================
+
+\begin{document}
+
+\title{\large \sc{O formalismo de Newman-Penrose}}
+\author{\small \sc{Hector O. Silva}}
+\date{}
+\maketitle
+
+Considere o tensor de Einstein, definido como:
+%
+\begin{empheq}[box=\widecolourbox]{equation}
+G_{ab} \equiv R_{ab} - \frac{1}{2} R g_{ab}\,,
+\end{empheq}
+%
+e uma equação qualquer do livro do Poisson-Will:
+%
+\begin{equation}
+{\cal J}^{jL} = \epsilon^{jab} \int_{\cal M} c^{-1} \tau^{0b}(t,\bm{x}) x^{a L} \, \dd^3 x\,.
+\end{equation}
+%
+onde $L$ é um multi-índice contendo $\ell$ índices, tal que
+$A^{L} \equiv A^{j_{1} j_{2} \dots j_{\ell}}$ por exemplo.
+%
+Citando um artigo qualquer \cite{Zerilli:1971wd}.
+
+\lipsum[2-10]
+
+\bibliographystyle{apalike}
+\bibliography{biblio}
+
+\end{document}
